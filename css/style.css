@@ -1,0 +1,171 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* Global Styles */
+img {
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(1, 0, 18, 1) 100%
+  );
+  font-family: "Roboto", sans-serif;
+  color: white;
+  box-sizing: border-box;
+}
+
+/* Responsive styles for screens up to 768px */
+@media screen and (max-width: 768px) {
+  .contenair_video {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  video {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  #contenair_avatar {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+  }
+
+  /* Avatar header */
+  #contenair_avatar img {
+    width: 20%;
+    border-radius: 50px;
+    position: relative;
+  }
+
+  /* Value of the account */
+  .contenair_valeur {
+    position: absolute;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .name_solde_header {
+    opacity: 0.6;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .valeur_header {
+    font-size: 30px;
+    padding-top: 10px;
+  }
+
+  /* End Value of the account */
+
+  #name_compte {
+    width: 50%;
+    font-size: 25px;
+  }
+
+  #name_compte h1 {
+    padding-left: 10px;
+  }
+
+  .option_comptes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .option_comptes h2 {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 10px;
+  }
+
+  .contenair_cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    padding-top: 10px;
+  }
+
+  .cards {
+    margin: 5px;
+    border-radius: 15px;
+    background-color: #00172d;
+    aspect-ratio: 16 / 9;
+    width: 45%;
+  }
+
+  .device {
+    padding-top: 10px;
+  }
+
+  .logo_device {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 75px;
+  }
+
+  .background_device {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(1, 0, 18, 1) 100%
+    );
+  }
+  .credi_card {
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 90px;
+    padding-top: 8px;
+  }
+
+  .solde_card_credit {
+    padding-top: 10px;
+    margin-left: 15px;
+  }
+
+  .contenair_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+
+    padding-top: 15px;
+  }
+
+  .contenair_list h2 {
+    font-size: 18px;
+  }
+}
