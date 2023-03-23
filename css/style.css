@@ -7,7 +7,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 /* Global Styles */
@@ -18,6 +18,10 @@ img {
 a {
   text-decoration: none;
   color: white;
+}
+
+ul {
+  list-style-type: none;
 }
 
 body {
@@ -49,21 +53,22 @@ body {
 
   #contenair_avatar {
     position: absolute;
-    top: 10px;
-    left: 25px;
+    width: 100%;
+    top: 10%;
   }
 
   /* Avatar header */
   #contenair_avatar img {
     width: 20%;
-    border-radius: 50px;
+    border-radius: 100%;
+    margin-left: 15px;
     position: relative;
   }
 
   /* Value of the account */
   .contenair_valeur {
     position: absolute;
-    padding-left: 100px;
+    padding-left: 115px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -83,25 +88,29 @@ body {
   /* End Value of the account */
 
   #name_compte {
-    width: 50%;
     font-size: 25px;
   }
 
   #name_compte h1 {
-    padding-left: 10px;
+    font-size: 40px;
+    padding-left: 15px;
+    width: 50%;
   }
 
   .option_comptes {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 10px;
   }
 
   .option_comptes h2 {
     font-weight: bold;
     font-size: 20px;
-    padding: 0 10px;
+    padding: 0 10;
   }
+
+  /* Cards compte */
 
   .contenair_cards {
     display: flex;
@@ -116,7 +125,7 @@ body {
     margin: 5px;
     border-radius: 15px;
     background-color: #00172d;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16/9;
     width: 45%;
   }
 
@@ -131,6 +140,12 @@ body {
     padding-right: 75px;
   }
 
+  .logo_device .fa-solid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .background_device {
     display: flex;
     align-items: center;
@@ -138,11 +153,7 @@ body {
     border-radius: 5px;
     width: 25px;
     height: 25px;
-    background: radial-gradient(
-      circle,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(1, 0, 18, 1) 100%
-    );
+    background: radial-gradient(circle, #000, #010012);
   }
   .credi_card {
     display: flex;
@@ -156,6 +167,10 @@ body {
     margin-left: 15px;
   }
 
+  /* End Cards compte */
+
+  /* Liste des transctions */
+
   .contenair_list {
     display: flex;
     align-items: center;
@@ -168,4 +183,32 @@ body {
   .contenair_list h2 {
     font-size: 18px;
   }
+
+  .contenair_avatar_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+
+  .contenair_avatar_list img {
+    width: 15%;
+    border-radius: 100%;
+    margin-left: 15px;
+  }
+
+  .name_list ul {
+    padding-right: 85px;
+    line-height: 25px;
+  }
+
+  .text_opacity {
+    opacity: 0.4;
+  }
+
+  .money_list {
+    padding-right: 15px;
+    line-height: 25px;
+  }
+  /* End Liste des transctions */
 }
