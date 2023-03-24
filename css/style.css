@@ -35,8 +35,8 @@ body {
   box-sizing: border-box;
 }
 
-/* Responsive styles for screens up to 768px */
-@media screen and (max-width: 768px) {
+/* Responsive styles for screens up to 425px */
+@media screen and (max-width: 425px) {
   .contenair_video {
     position: relative;
     display: flex;
