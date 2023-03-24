@@ -51,6 +51,27 @@ body {
     object-fit: cover;
   }
 
+  .video_entrance {
+    animation: video_Entrance 4s ease 0s 1 normal forwards;
+  }
+
+  @keyframes video_Entrance {
+    0% {
+      opacity: 0;
+      filter: blur(2px);
+    }
+
+    80% {
+      opacity: 1;
+      filter: blur(0px);
+    }
+
+    100% {
+      opacity: 1;
+      filter: blur(0px);
+    }
+  }
+
   #contenair_avatar {
     position: absolute;
     width: 100%;
@@ -65,6 +86,22 @@ body {
     position: relative;
   }
 
+  .img_entrance {
+    animation: img_Entrance 1s ease 2s 1 normal backwards;
+  }
+
+  @keyframes img_Entrance {
+    0% {
+      opacity: 0;
+      transform: translateY(-250px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   /* Value of the account */
   .contenair_valeur {
     position: absolute;
@@ -72,6 +109,22 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+
+  .valeur_entrance {
+    animation: valeur_Entrance 1s ease 2s 1 normal backwards;
+  }
+
+  @keyframes valeur_Entrance {
+    0% {
+      opacity: 0;
+      transform: translateX(250px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
   .name_solde_header {
@@ -342,9 +395,13 @@ body {
   @keyframes listEntrance {
     0% {
       opacity: 0;
+      filter: blur(5px);
       transform: translateY(-15px);
     }
-
+    75% {
+      opacity: 1;
+      filter: blur(0px);
+    }
     100% {
       opacity: 1;
       transform: translateY(0);
