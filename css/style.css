@@ -35,8 +35,8 @@ body {
   box-sizing: border-box;
 }
 
-/* Responsive styles for screens up to 425px */
-@media screen and (max-width: 425px) {
+/* Styles spécifiques aux mobiles (max-width: 768px) */
+@media screen and (max-width: 768px) {
   .contenair_video {
     position: relative;
     display: flex;
@@ -140,16 +140,19 @@ body {
 
   /* End Value of the account */
 
-  #name_compte {
-    font-size: 25px;
-  }
-
   .name_compte h1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     font-size: 40px;
-    padding-left: 15px;
-    width: 50%;
+    padding-right: 45%;
   }
 
+  .name_compte .name_user {
+    font-size: 25px;
+    padding-right: 65px;
+    
+  }
   .name_entrance {
     animation: nameEntrance 2s ease 1s 1 normal backwards;
   }
